@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails_admin'
 gem "paperclip"
 gem 'jquery-ui-rails'
-gem 'jquery-rails'
 gem 'jquery-turbolinks'
 
 
