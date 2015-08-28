@@ -222,6 +222,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   jquery-ui-rails
+  nokogiri
   paperclip
   rails (= 4.2.3)
   rails_admin

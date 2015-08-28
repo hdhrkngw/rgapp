@@ -1,4 +1,541 @@
-@media (min-width: 481px) {
+body {
+	height:100%;
+	margin: 0%;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',Osaka,sans-serif;
+/*	background-color: #f3f3f3;
+*/}
+
+.top {
+	width: 100%;
+	height: 13%;
+	position: relative;
+	background-color: white;
+}
+
+.top p {
+	position: absolute;
+	display: block;
+	width: 80%;
+	height: 50%;
+	padding-left: 8%;
+	font-size: 250%;
+	font-family: courier;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.top p span {
+	font-size: 50%;
+}
+
+/*#nav {
+	width: 100%;
+	height: 45px;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	position: relative;
+	background-color: white;
+}*/
+
+#nav img {
+	width: 100%;
+	height: auto;
+}
+
+/*#aboutus {
+	position: absolute;
+	width: 31.6%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s;
+}*/
+
+#aboutus:hover {
+	opacity: 1;
+}
+
+#article {
+	position: absolute;
+	width: 35.7%;
+	top: 0;
+	left: 30.3%;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#article:hover {
+	opacity: 1;
+}
+
+#contact {
+	position: absolute;
+	width: 35.5%;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#contact:hover {
+	opacity: 1;
+}
+
+.articlewrap {
+	width: 100%;
+	/*height: 115px;*/
+	height: auto;
+}
+
+#main {
+	width: 100%;
+	height: auto;
+	padding-top: 4%;
+	background-color: #f3f3f3;
+}
+
+#articletop {
+	width: 63%;
+	height: 100%;
+	margin-left: 4%;
+	margin-right: 2%;
+	margin-bottom: 5%;
+	float: left;
+	background-color: white;
+}
+
+#articlemain {
+	width: 90%;
+	height: auto;
+	padding: 3% 5% 3% 5%;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+}
+
+.articletitle {
+	width: 94%;
+	height: 20%;
+	margin-bottom: 3%;
+	padding-left: 5%;
+	border-left: 4px solid #a381d1;
+}
+
+.articletitle p {
+	width: 100%;
+	height: 10%;
+	padding-top: 2%;
+	margin-bottom: 3%;
+}
+
+.articletitle h1 {
+	width: 100%;
+	margin: 0;
+	font-size: 25px
+}
+
+.mainimage {
+	width: 80%;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+.mainimage img {
+	width: 100%;
+	height: auto;
+}
+
+.snsbox {
+	width: 100%;
+	height: 10%;
+	margin-bottom: 5%;
+}
+
+.snsfb {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #305097;
+}
+
+.snstw {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #00aced;
+}
+
+.beforecontents {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5%;
+}
+
+.beforecontents p {
+	width: 100%;
+	height: auto;
+}
+
+.articlecontents {
+	width: 90%;
+	height: auto;
+	padding-left: 10%;
+	margin-bottom: 10%;
+	position: relative;
+}
+
+.sideline {
+	position: absolute;
+	width: 2%;
+	height: 100%;
+	border-left: 4px solid #f1f1f1;
+	border-right: 4px solid #f1f1f1;
+	padding-left: 1%;
+	padding-right: 1%;
+	background-color: #f3f3f3;
+	left: 0.5%;
+	top: 0%;
+}
+
+.articlecontents h2 {
+	width: 97%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-left: 3%;
+	position: relative;
+}
+
+.articlecontents h2 span {
+	position: absolute;
+	font-family: courier;
+	font-size: 200%;
+	width: 8%;
+	height: 150%;
+	text-align: center;
+	left: -12%;
+	bottom: -10%;
+	letter-spacing: 0;
+	background-color: white;
+
+}
+
+.articlecontents p {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5%;
+	text-align: left;
+}
+
+.articlecontents p img {
+	width: 100%;
+	height: auto;
+}
+
+.divide {
+	width: 100%;
+	height: 0.5%;
+	border-top: 2px solid #f1f1f1;
+	border-bottom: 2px solid #f1f1f1;
+	margin-bottom: 5%;
+}
+
+.related {
+	width: 100%;
+	height: 40%;
+	margin-bottom: 5%;
+	text-decoration: none;
+}
+
+.related a {
+	text-decoration: none;
+}
+
+.related h2 {
+	width: 100%;
+	margin-top: 0;
+	font-weight: normal;
+}
+
+.relatedarticle {
+	width: 30%;
+	height: 75%;
+	margin-right: 3%;
+	margin-top: 5%;
+	float: left;
+}
+
+/*.relatedarticle a p {
+	color: black;
+	text-decoration: none;
+}*/
+
+.relatedarticle a:hover .subtime {
+	color: #a381d1;
+}
+
+.relatedarticle a:hover .subrelate {
+	color: #a381d1;
+}
+
+.relatedarticle a:hover img{
+	opacity: 0.7;
+}
+
+.relatedcircle:nth-child(4) {
+	margin-right: 0;
+}
+
+.subimg {
+	width: 100%;
+	height: 50%;
+	margin-bottom: 5%;
+	overflow: hidden;
+	position: relative;
+}
+
+.subimg img {
+	top: 0;
+	right: -20%;
+	width: 200%;
+	height: auto;
+	position: absolute;
+	transition: 0.3s;
+}
+
+.subtime {
+	width: 100%;
+	height: 10%;
+	font-size: 60%;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: black;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.subrelate {
+	width: 100%;
+	height: 30%;
+	font-size: 80%;
+	margin-top: 5%;
+	margin-bottom: 0;
+	color: black;
+	transition: 0.3s;
+	
+}
+
+.sidebar {
+	width: 27%;
+	height: auto;
+	margin-right: 4%;
+	float: left;
+}
+
+.facebookbar, .twitterbar, .googlebar{
+	width: 100%;
+	height: auto;
+	margin-bottom: 8%;
+}
+
+.facebookbar img, .twitterbar img , .googlebar img{
+	width: 100%;
+	height: auto;
+}
+
+.facebookbar a:hover, .twitterbar a:hover, .googlebar a:hover {
+	opacity: 0.7;
+	transition: 0.3s;
+}
+
+#recommendbar {
+	width: 100%;
+	height: auto;
+	margin-top: 20%;
+}
+
+#recommendbar h2 {
+	width: 87%;
+	padding: 5%;
+	padding-left: 8%;
+	margin: 0;
+	font-weight: normal;
+	color: white;
+	background-color: #a381d1;
+}
+
+#recommendbar p {
+	width: 90%;
+	padding: 5%;
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+	text-align: center;
+	color: white;
+	background-color: #a381d1;
+}
+
+#recommendbar a {
+	text-decoration: none;
+}
+
+#recommendbar a:hover p {
+	opacity: 0.8;
+	transition: 0.3s;
+}
+
+.pickup {
+	width: 90%;
+	height: 15%;
+	padding: 5%;
+	border-bottom: 1px solid #a381d1;
+	text-decoration: none;
+	background-color: white;
+}
+
+.pickup:hover h3 {
+	color: orange;
+}
+
+.pickupimg { 
+	width: 40%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.pickupimg img {
+	position: absolute;
+	width: 200%;
+	height: auto;
+	top: 0;
+	right: -30%;
+}
+
+.pickupex {
+	width: 55%;
+	height: 99%;
+	padding-left: 5%;
+	padding-top: 1%;
+	float: left;
+}
+
+.pickupex h3 {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 90%;
+	color: black;
+	transition: 0.3s;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	position: relative;
+	float: left;
+	background-color: #f3f3f3;
+}
+
+footer img {
+	width: 100%;
+	height: auto;
+}
+
+.what {
+	width: 20%;
+	height: auto;
+	position: absolute;
+	left: 36%;
+	top: 7%;
+	z-index: 100;
+}
+
+.what img {
+	width: 100%;
+	height: auto;
+}
+
+#what {
+	position: relative;
+	transition: 0.3s;
+}
+
+#what img {
+	position: absolute;
+	right: 0;
+	transition: 0.3s;
+}
+
+#what img:hover {
+	right: 10%;
+	top: 0;
+}
+
+.team {
+	width: 20%;
+	height: auto;
+	position: absolute;
+	left: 38%;
+	top: 35%;
+	z-index: 100;
+}
+
+.team img {
+	width: 100%;
+	height: auto;
+}
+
+#team {
+	position: relative;
+	transition: 0.3s;
+}
+
+#team img {
+	position: absolute;
+	right: 0;
+	transition: 0.3s;
+}
+
+#team img:hover {
+	right: 10%;
+	top: 0;
+}
+
+.e-mail {
+	width: 20%;
+	height: auto;
+	position: absolute;
+	left: 41%;
+	top: 60%;
+	z-index: 100;
+}
+
+.e-mail img {
+	width: 100%;
+	height: auto;
+}
+
+#e-mail {
+	position: relative;
+	transition: 0.3s;
+}
+
+#e-mail img {
+	position: absolute;
+	right: 0;
+	transition: 0.3s;
+}
+
+#e-mail img:hover {
+	right: 10%;
+	top: 0;
+}
+@media (min-width: 481px) and (max-width: 767px) {
 
 	html { height:100%; }
 
@@ -1024,4 +1561,21 @@
 	}
 
 }
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
 
