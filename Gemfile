@@ -7,7 +7,11 @@ gem 'jquery-turbolinks'
 
 gem 'nokogiri'
 
-
+gem 'rb-readline'
+gem 'unicorn'
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
