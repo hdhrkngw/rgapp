@@ -10,7 +10,7 @@ set :repo_url, 'https://github.com/hdhrkngw/rgapp.git'
 set :branch, 'master'
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/app/rgapp'
+set :deploy_to, '/var/www/rgapp'
 
 # Default value for :scm is :git
 set :scm, :git
