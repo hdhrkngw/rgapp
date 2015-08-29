@@ -1,13 +1,11 @@
-set :branch, 'master'
-
+set :stage, :production #環境名
 role :app, %w{hidehiro@160.16.63.29}
 role :web, %w{hidehiro@160.16.63.29}
 role :db,  %w{hidehiro@160.16.63.29}
 
 server 'localhost', user: 'vagrant', roles: %w{web app db}
-
 user = "vagrant"
-ipaddress = "192.168.33.10"
+#roles: %w{web app db},
 
 #set :ssh_options, {
 #    keys: [File.expand_path('/key/path/to/')],
@@ -16,7 +14,9 @@ ipaddress = "192.168.33.10"
 #}
 
 set :ssh_options, {
-  keys: %w(/home/vagrant/.ssh/id_rsa) 
+  keys: %w(/home/vagrant/.ssh/id_rsa),
+  auth_methods: %w(publickey), # 認証方法 passwordも可能
+  #password: 'vagrant' #password指定
 }
 
 

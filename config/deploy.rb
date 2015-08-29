@@ -1,28 +1,36 @@
-#config valid only for current version of Capistrano
-lock '3.4.0'
-
-set :application, 'rgapp'
+#アプリケーション名
+set :application,'rgapp'
+#レポジトリURL
 set :repo_url, 'git@github.com:hdhrkngw/rgapp.git'
+#対象ブランチ masterに固定
+set :branch, 'master'
+#デプロイ先ディレクトリ フルパスで指定
+set :deploy_to, '/var/www/rgapp'
+#バージョン管理方法 subverion, git, mercurial, cvs, bzrなど
+set :scm, :git
+#情報レベル info or debug
+set :log_level, :debug
+#sudoに必要 これをtrueにするとssh -tで実行される
+set :pty, true
+#sharedに入るものを指定
+set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets bundle public/system public/assets}
+#capistrano用bundleするのに必要
+set :default_env, { path: "/usr/local/rbenv/shims:/usr/local/rbenv/bin:$PATH" }
+#5回分のreleasesを保持する
+set :keep_releases, 5 
 
-set :deploy_to, '/server/rails/path/to'
-set :keep_releases, 5
-
-set :rbenv_type, :system # :system or :user
-set :rbenv_ruby, '2.1.2'
-set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
-set :rbenv_map_bins, %w{rake gem bundle ruby rails}
-set :rbenv_roles, :all # default value
-
-set :linked_dirs, %w{bin log tmp/backup tmp/pids tmp/cache tmp/sockets vendor/bundle}
-set :unicorn_pid, "#{shared_path}/tmp/pids/unicorn.pid"
-
-set :bundle_jobs, 4
-
-set :whenever_identifier, ->{ "#{fetch(:application)}_#{fetch(:stage)}" }
-
-after 'deploy:publishing', 'deploy:restart'
-namespace :deploy do
-  task :restart do
-    invoke 'unicorn:restart'
-  end
+#タスク定義
+namespace :deploy do #タスクnamespace
+    #desc 'タスク説明'
+    #task :restart do #タスク定義 
+        #ここにタスク処理内容を記述
+    #end
+  #after :finishing, 'deploy:cleanup' #task実行タイミングを指定できます。詳細は下記
+  #http://capistranorb.com/documentation/getting-started/flow/
+    #サンプルにunicorn再起動タスク
+    desc 'Restart application'
+    task :restart do
+      invoke 'unicorn:restart' #lib/capustrano/tasks/unicorn.cap内処理を実行
+    end
+  after :finishing, 'deploy:cleanup'
 end

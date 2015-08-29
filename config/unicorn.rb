@@ -1,6 +1,6 @@
-# -*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 worker_processes 2
-
+vagrant sshvagrant
 listen  "160.16.63.29:3000"
 pid     "tmp/pids/unicorn.pid"
 
