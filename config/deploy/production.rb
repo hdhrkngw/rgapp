@@ -4,7 +4,7 @@ role :app, %w{hidehiro@160.16.63.29}
 role :web, %w{hidehiro@160.16.63.29}
 role :db,  %w{hidehiro@160.16.63.29}
 
-#server 'localhost', user: 'vagrant', roles: %w{web app db}
+server 'localhost', user: 'vagrant', roles: %w{web app db}
 
 user = "vagrant"
 ipaddress = "192.168.33.10"
