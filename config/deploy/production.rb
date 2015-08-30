@@ -20,7 +20,6 @@ set :ssh_options, {
   keys: %w(/home/vagrant/.ssh/id_rsa),
   auth_methods: %w(publickey), # 認証方法 passwordも可能
   #password: 'vagrant' #password指定
-  verbose: :debug
 }
 
 
