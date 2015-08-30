@@ -25,6 +25,9 @@ require 'capistrano/deploy'
 #require 'capistrano/bundler'
 #require 'capistrano3/unicorn'
 
+# Rails4から分離したsecrets.ymlの環境変数を .envファイルで管理する
+set :linked_files, %w{config/secrets.yml .env}
+
 # require 'capistrano/rvm'
 #require 'capistrano/rbenv'
 #set :rbenv_type, :system # or :system, depends on your rbenv setup

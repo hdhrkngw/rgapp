@@ -8,7 +8,13 @@ gem 'jquery-turbolinks'
 gem 'nokogiri'
 
 gem 'rb-readline'
-gem 'unicorn'
+
+gem 'dotenv-rails'
+
+group :production, :staging do
+	gem 'unicorn'
+end
+
 gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'

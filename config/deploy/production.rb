@@ -1,10 +1,13 @@
-set :stage, :production #環境名
+set :rails_env, "production"
+set :unicorn_rack_env, "production"
+
+#set :stage, :production #環境名
 role :app, %w{hidehiro@160.16.63.29}
 role :web, %w{hidehiro@160.16.63.29}
 role :db,  %w{hidehiro@160.16.63.29}
 
-server 'localhost', user: 'vagrant', roles: %w{web app db}
-user = "vagrant"
+server '160.16.63.29', user: 'hidehiro', roles: %w{web app db}
+#user = "vagrant"
 #roles: %w{web app db},
 
 #set :ssh_options, {
